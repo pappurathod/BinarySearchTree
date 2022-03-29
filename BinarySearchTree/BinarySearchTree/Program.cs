@@ -24,6 +24,9 @@ namespace BinarySearchTree
             binarySearchTree.Display();
 
             binarySearchTree.GetSize();
+
+            Console.WriteLine("------------------------");
+            binarySearchTree.Search(63, binarySearchTree);
         }
     }
 }
