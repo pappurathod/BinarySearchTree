@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BinarySearchTree
 {
-    public class BinarySearchTree<T> where T : IComparable //<T>
+    public class BinarySearchTree<T> where T : IComparable 
     {
         public T NodeData { get; set; }
         public BinarySearchTree<T> LeftTree { get; set; }
@@ -49,6 +49,10 @@ namespace BinarySearchTree
                 }
                 this.rightCount++;
             }
+        }
+        public void GetSize()
+        {
+            Console.WriteLine("Size :" + (this.leftCount + this.rightCount +1));
         }
         public void Display()
         {
